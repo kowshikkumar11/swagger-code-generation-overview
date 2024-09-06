@@ -12,8 +12,8 @@ public class StudentController implements StudentApi {
     public ResponseEntity<Student> getStudentDetail(String studentId) {
         // get student data from service layer
         Student student = new Student();
-        student.setId(1);
-        student.setName("sai");
+        student.setId(Integer.valueOf(studentId));
+        student.setName("sai " + studentId);
         student.setAge(27);
         ResponseEntity<Student> responseEntity = ResponseEntity.ok(student);
         return responseEntity;
