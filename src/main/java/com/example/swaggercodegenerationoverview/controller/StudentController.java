@@ -13,7 +13,7 @@ public class StudentController implements StudentApi {
         // get student data from service layer
         Student student = new Student();
         student.setId(1);
-        student.setName("Vivek");
+        student.setName("sai");
         student.setAge(27);
         ResponseEntity<Student> responseEntity = ResponseEntity.ok(student);
         return responseEntity;
